@@ -32,7 +32,7 @@ define Package/ralink-wifi-mt76x8
   SECTION:=ralink
   CATEGORY:=Ralink
   TITLE:=Ralink APSoC WiFi SoftAP driver
-  DEPENDS:=@TARGET_ramips_mt7628 +wireless-tools +maccalc
+  DEPENDS:=@(TARGET_ramips_mt7628||TARGET_ramips_mt7688) +wireless-tools +maccalc
 endef
 
 define Package/ralink-wifi-mt76x8/description
